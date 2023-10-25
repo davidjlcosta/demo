@@ -50,7 +50,7 @@ public class ProductController {
     }
 
     // delete product
-    @DeleteMapping("products/{id}")
+    @DeleteMapping("/products/{id}")
     public ResponseEntity<Map<String, Boolean>> deleteProduct(@PathVariable Long id) {
         Product product = productRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("Product not found"));
