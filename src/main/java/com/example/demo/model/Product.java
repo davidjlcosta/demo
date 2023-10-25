@@ -3,6 +3,8 @@ package com.example.demo.model;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.math.BigDecimal;
+
 @Getter
 @Setter
 @Builder
@@ -18,5 +20,8 @@ public class Product extends BaseModel {
 
     @Column(name = "name")
     private String name;
+
+    @Column(name = "price", columnDefinition = "decimal (10,2)")
+    private BigDecimal price;
 
 }
