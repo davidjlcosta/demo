@@ -1,5 +1,7 @@
 FROM openjdk:17
+FROM maven:3.8.3-openjdk-17 as maven_build
 VOLUME /tmp
 EXPOSE 8080
-COPY target/demo-0.0.1-SNAPSHOT.jar demo.jar
+RUN mvn clean install -DskipTests
+COPY --from=maven_build /path/to/target/*.jar /demo.jar
 ENTRYPOINT ["java","-jar","/demo.jar"]
