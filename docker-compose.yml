@@ -10,7 +10,7 @@ services:
       - POSTGRES_PASSWORD=david
       - POSTGRES_DB=database
     ports:
-      - '5432:5432'
+      - '5433:5432'
 
   demo:
     container_name: demo_app
