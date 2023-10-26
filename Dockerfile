@@ -1,7 +1,5 @@
-FROM openjdk:17
-
-WORKDIR /teste
-COPY . .
+FROM openjdk:17-jdk-alpine
 RUN mvn clean install
+COPY target/live-0.0.1-SNAPSHOT.jar app-1.0.0.jar
 
-CMD mvn spring-boot:run
+ENTRYPOINT [ "java", "-jar", "app-1.0.0.jar" ]
