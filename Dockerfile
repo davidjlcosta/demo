@@ -1,6 +1,5 @@
-FROM openjdk:17-oracle
-WORKDIR /app
-RUN mvn clean install -DskipTests
-COPY target/demo-1.0.0.jar .
+FROM openjdk:17
+VOLUME /tmp
 EXPOSE 8080
-ENTRYPOINT ["java","-jar","demo-1.0.0.jar"]
+COPY target/demo-0.0.1-SNAPSHOT.jar demo.jar
+ENTRYPOINT ["java","-jar","/demo.jar"]
