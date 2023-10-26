@@ -1,5 +1,7 @@
 FROM openjdk:17
-VOLUME /tmp
-EXPOSE 8080
-COPY target/demo-0.0.1-SNAPSHOT.jar demo.jar
-ENTRYPOINT ["java","-jar","/demo.jar"]
+
+WORKDIR /teste
+COPY . .
+RUN mvn clean install
+
+CMD mvn spring-boot:run
