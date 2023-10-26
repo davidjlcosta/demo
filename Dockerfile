@@ -1,5 +1,6 @@
-FROM eclipse-temurin:17-jdk-alpine
-VOLUME /tmp
-COPY target/*.jar app.jar
+FROM openjdk:17-oracle
+WORKDIR /app
+RUN mvn clean install
+COPY target/demo-1.0.0.jar .
 EXPOSE 8080
-ENTRYPOINT ["java","-jar","/app.jar"]
+ENTRYPOINT ["java","-jar","demo-1.0.0.jar"]
