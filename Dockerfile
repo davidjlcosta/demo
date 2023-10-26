@@ -1,5 +1,5 @@
-FROM openjdk:17-oracle
-WORKDIR /app
-COPY target/demo-1.0.0.jar .
+FROM eclipse-temurin:17-jdk-alpine
+VOLUME /tmp
+COPY target/*.jar app.jar
 EXPOSE 8080
-ENTRYPOINT ["java","-jar","demo-1.0.0.jar"]
+ENTRYPOINT ["java","-jar","/app.jar"]
