@@ -8,12 +8,16 @@ What software you need to install before cloning the repository.
 
 > - [Docker](https://docs.docker.com/get-docker)
 > - [Git](https://git-scm.com/downloads)
-> - Windows | Linux
+> - Linux
 
 #### <i></i> Installing
 
 A step by step approach to get the development environment up and running:
 
+Installing OpenJDK 17 in case you don't have it
+```bash
+sudo apt install -y openjdk-17-jdk
+```
 Cloning the repository
 ```bash
 git clone https://github.com/davidjlcosta/demo.git
