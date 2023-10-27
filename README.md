@@ -4,7 +4,7 @@ Spring Boot CRUD Rest API example with Maven that use Spring Data JPA/Hibernate 
 
 Getting Started
 ---------------
-These instructions will get you a copy of the project on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project on your local machine for development and testing purposes.
 
 #### <i></i> Prerequisites
 What software you need to install before cloning the repository.
@@ -29,10 +29,6 @@ Build and run
 ```bash
 docker compose up
 ```
-
-Deployment
----------------
-To be done.
 
 
 Built with
