@@ -34,7 +34,7 @@ To be done.
 
 Built with
 ---------------
-- [Java 17](https://docs.oracle.com/en/java/javase/17/)
+- [Java 17](https://docs.oracle.com/en/java/javase/17/) - Provides an environment for building applications using the Java programing language, testing, and running the Java programs.
 - [Spring Boot](https://spring.io/projects/spring-boot) - Tool that makes developing web application and microservices with Java Spring Framework faster and easier.
 - [Spring WEB](https://spring.io/web-applications) - Build web, including RESTful, applications using Spring MVC.
 - [Spring JPA](https://spring.io/projects/spring-data-jpa) - Persist data in SQL stores with Java Persistence API using Spring Data and Hibernate.
