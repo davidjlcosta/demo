@@ -13,7 +13,6 @@ What software you need to install before cloning the repository.
 > - [Docker](https://docs.docker.com/get-docker)
 > - [Git](https://git-scm.com/downloads)
 > - [Maven](https://maven.apache.org/download.cgi)
-> - Linux
 
 #### <i></i> Installing
 
