@@ -9,6 +9,7 @@ These instructions will get you a copy of the project on your local machine for 
 #### <i></i> Prerequisites
 What software you need to install before cloning the repository.
 
+> - [OpenJDK 17](https://jdk.java.net/archive/)
 > - [Docker](https://docs.docker.com/get-docker)
 > - [Git](https://git-scm.com/downloads)
 > - [Maven](https://maven.apache.org/download.cgi)
@@ -29,6 +30,10 @@ git clone https://github.com/davidjlcosta/demo.git
 Enter the repository
 ```bash
 cd demo
+```
+Install the dependencies
+```bash
+mvn clean install -DskipTests
 ```
 Build and run
 ```bash
