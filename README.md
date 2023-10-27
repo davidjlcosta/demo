@@ -10,9 +10,9 @@ These instructions will get you a copy of the project on your local machine for 
 What software you need to install before cloning the repository.
 
 > - [OpenJDK 17](https://jdk.java.net/archive/)
-> - [Docker](https://docs.docker.com/get-docker)
 > - [Git](https://git-scm.com/downloads)
 > - [Maven](https://maven.apache.org/download.cgi)
+> - [Docker](https://docs.docker.com/get-docker)
 
 #### <i></i> Installing
 
