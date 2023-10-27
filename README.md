@@ -25,6 +25,10 @@ Clone the repository
 ```bash
 git clone https://github.com/davidjlcosta/demo.git
 ```
+Enter the repository
+```bash
+cd demo
+```
 Build and run
 ```bash
 docker compose up
