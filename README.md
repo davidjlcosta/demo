@@ -1,4 +1,7 @@
 # Demo Application
+
+Spring Boot CRUD Rest API example with Maven that use Spring Data JPA/Hibernate to interact with PostgreSQL database.
+
 Getting Started
 ---------------
 These instructions will get you a copy of the project on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
