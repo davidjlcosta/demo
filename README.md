@@ -17,15 +17,15 @@ What software you need to install before cloning the repository.
 
 A step by step approach to get the development environment up and running:
 
-Installing OpenJDK 17 in case you don't have it
+- Install OpenJDK 17 in case you don't have it
 ```bash
 sudo apt install -y openjdk-17-jdk
 ```
-Cloning the repository
+- Clone the repository
 ```bash
 git clone https://github.com/davidjlcosta/demo.git
 ```
-Building and running
+- Build and run
 ```bash
 docker compose up
 ```
