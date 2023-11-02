@@ -54,6 +54,16 @@ Build and run
 docker compose up
 ```
 
+Testing
+---------------
+Add a product
+```bash
+curl -d '{"name": "test", "price": 10}' -H "Content-Type: application/json" -X POST http://localhost:8080/products
+```
+Get all products
+```bash
+curl http://localhost:8080/products
+```
 
 Built with
 ---------------
