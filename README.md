@@ -4,7 +4,7 @@ Spring Boot CRUD Rest API example with Maven that use Spring Data JPA/Hibernate 
 
 Getting Started
 ---------------
-These instructions will get you a copy of the project on your local machine for development and testing purposes.
+These instructions will get you a copy of the project on your local machine for development and testing purposes. We recommend using a Debian GNU/Linux distribution such as <code>ubuntu-22.04.3-live-server-amd64</code>.
 
 #### <i></i> Prerequisites
 What software you need to install before cloning the repository.
@@ -14,8 +14,40 @@ What software you need to install before cloning the repository.
 > - [Maven](https://maven.apache.org/download.cgi)
 > - [Docker](https://docs.docker.com/get-docker)
 
-#### <i></i> Installing
+Install OpenJDK 17
+```bash
+sudo apt install -y openjdk-17-jdk
+```
+Install Git
+```bash
+sudo apt install git
+```
+Install Maven
+```bash
+sudo apt install maven
+```
+Install Docker
+```bash
+# Add Docker's official GPG key:
+sudo apt-get update
+sudo apt-get install ca-certificates curl gnupg
+sudo install -m 0755 -d /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+sudo chmod a+r /etc/apt/keyrings/docker.gpg
 
+# Add the repository to Apt sources:
+echo \
+  "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+  "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt-get update
+
+# Install the Docker packages latest version
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+```
+
+Installing
+---------------
 A step by step approach to get the development environment up and running:
 
 Clone the repository
@@ -32,9 +64,30 @@ mvn clean install -DskipTests
 ```
 Build and run
 ```bash
-docker compose up
+sudo docker compose up -d
 ```
 
+Testing
+---------------
+Add a product
+```bash
+curl -d '{"name": "test", "price": 10}' -H "Content-Type: application/json" -X POST http://localhost:8080/products
+```
+Get all products
+```bash
+curl http://localhost:8080/products
+```
+It should return:
+
+<code>[{"id":1,"name":"teste","price":10.00}]</code>
+
+Maintaining
+---------------
+```bash
+sudo apt-get update
+sudo apt-get upgrade
+git pull
+```
 
 Built with
 ---------------
