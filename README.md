@@ -66,7 +66,7 @@ mvn clean install -DskipTests
 ```
 Build and run
 ```bash
-docker compose up
+sudo docker compose up -d
 ```
 
 Testing
