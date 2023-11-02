@@ -58,12 +58,15 @@ Testing
 ---------------
 Add a product
 ```bash
-curl -d '{"name": "test", "price": 10}' -H "Content-Type: application/json" -X POST http://localhost:8080/products
+curl -d '{"name": "test", "price": 10}' -H "Content-Type: application/json" -X POST http://localhost:8081/products
 ```
 Get all products
 ```bash
-curl http://localhost:8080/products
+curl http://localhost:8081/products
 ```
+It should return:
+
+<code>[{"id":1,"name":"teste","price":10.00}]</code>
 
 Built with
 ---------------
