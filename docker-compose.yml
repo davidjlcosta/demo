@@ -22,7 +22,7 @@ services:
     privileged: true
     user: root
     ports:
-     - '8081:8081'
+     - '8080:8080'
      - '50000:50000'
     container_name: jenkins
     volumes:
@@ -35,7 +35,7 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - '8080:8080'
+      - '8082:8082'
     environment:
       - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres_db:5432/database
       - SPRING_DATASOURCE_USERNAME=david
