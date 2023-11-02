@@ -30,7 +30,7 @@ sudo apt install maven
 ```
 Install Docker
 ```bash
-sudo snap install docker
+sudo apt install docker.io
 ```
 
 Installing
