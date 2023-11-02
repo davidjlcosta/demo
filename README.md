@@ -81,14 +81,6 @@ It should return:
 
 <code>[{"id":1,"name":"teste","price":10.00}]</code>
 
-Maintaining
----------------
-```bash
-sudo apt-get update
-sudo apt-get upgrade
-git pull
-```
-
 Built with
 ---------------
 - [Java 17](https://docs.oracle.com/en/java/javase/17/) - Provides an environment for building applications using the Java programing language, testing, and running the Java programs.
