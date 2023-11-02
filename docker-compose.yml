@@ -17,6 +17,18 @@ services:
     volumes:
       - pgdata:/var/lib/postgresql/data
 
+  jenkins:
+    image: jenkins/jenkins:lts
+    privileged: true
+    user: root
+    ports:
+     - '8081:8081'
+     - '50000:50000'
+    container_name: jenkins
+    volumes:
+      - /home/david/jenkins_compose/jenkins_configuration:/var/jenkins_home
+      - /var/run/docker.sock:/var/run/docker.sock
+
   api:
     container_name: rest_api
     build:
@@ -31,3 +43,4 @@ services:
       - SPRING_JPA_HIBERNATE_DDL_AUTO=update
     depends_on:
       - postgres
+      - jenkins
