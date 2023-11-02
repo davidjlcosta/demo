@@ -14,8 +14,27 @@ What software you need to install before cloning the repository.
 > - [Maven](https://maven.apache.org/download.cgi)
 > - [Docker](https://docs.docker.com/get-docker)
 
-#### <i></i> Installing
+If you are using a Debian GNU/Linux distribution such as Ubuntu, here's a step by step approach to install the prerequisites:
 
+Install OpenJDK 17
+```bash
+sudo apt install -y openjdk-17-jdk
+```
+Install Git
+```bash
+sudo apt install git-all
+```
+Install Maven
+```bash
+sudo apt install maven
+```
+Install Docker
+```bash
+sudo snap install docker
+```
+
+Installing
+---------------
 A step by step approach to get the development environment up and running:
 
 Clone the repository
