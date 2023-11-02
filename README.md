@@ -4,7 +4,7 @@ Spring Boot CRUD Rest API example with Maven that use Spring Data JPA/Hibernate 
 
 Getting Started
 ---------------
-These instructions will get you a copy of the project on your local machine for development and testing purposes. We recommend following along the instructions using a Debian GNU/Linux distribution such as <code>ubuntu-22.04.3-live-server-amd64</code>.
+These instructions will get you a copy of the project on your local machine for development and testing purposes. We recommend using a Debian GNU/Linux distribution such as <code>ubuntu-22.04.3-live-server-amd64</code>.
 
 #### <i></i> Prerequisites
 What software you need to install before cloning the repository.
