@@ -1,9 +1,9 @@
 version: "3.8"
 
 services:
-  postgresService:
+  postgres:
     image: postgres
-    container_name: postgres
+    container_name: postgres_db
     restart: always
     environment:
       - POSTGRES_USER=david
@@ -12,17 +12,17 @@ services:
     ports:
       - '5433:5432'
 
-  apiService:
-    container_name: api
+  api:
+    container_name: rest_api
     build:
       context: .
       dockerfile: Dockerfile
     ports:
       - '8080:8080'
     environment:
-      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/database
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres_db:5432/database
       - SPRING_DATASOURCE_USERNAME=david
       - SPRING_DATASOURCE_PASSWORD=david
       - SPRING_JPA_HIBERNATE_DDL_AUTO=update
     depends_on:
-      - postgresService
+      - postgres
