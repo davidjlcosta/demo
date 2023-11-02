@@ -22,7 +22,7 @@ sudo apt install -y openjdk-17-jdk
 ```
 Install Git
 ```bash
-sudo apt install git-all
+sudo apt install git
 ```
 Install Maven
 ```bash
